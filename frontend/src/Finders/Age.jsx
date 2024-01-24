@@ -9,7 +9,7 @@ export default function Age(){
             setAge(event.target.value);
         }
         async function handleStrictEqualSearch(){
-          const response = await fetch(`http://localhost:5000/find/age/${age}`, {
+          const response = await fetch(`https://backend-252y.onrender.com/find/age/${age}`, {
             method:"GET"
           });
       
@@ -23,7 +23,7 @@ export default function Age(){
           }
         }
         async function handleLessThanAgeSearch(){
-          const response = await fetch(`http://localhost:5000/find/lage/${age}`, {
+          const response = await fetch(`https://backend-252y.onrender.com/find/lage/${age}`, {
             method:"GET"
           });
       
@@ -37,7 +37,7 @@ export default function Age(){
           }
         }
         async function handleGreaterThanAgeSearch(){
-          const response = await fetch(`http://localhost:5000/find/gage/${age}`, {
+          const response = await fetch(`https://backend-252y.onrender.com/find/gage/${age}`, {
             method:"GET"
           });
       
