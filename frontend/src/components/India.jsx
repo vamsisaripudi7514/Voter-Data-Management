@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Overlay, Tooltip } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  './india.css';
 const India = () => {
