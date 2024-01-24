@@ -9,7 +9,7 @@ export default function Name(){
             setName(event.target.value);
         }
         async function handleFullNameSearch(){
-          const response = await fetch(`http://localhost:5000/find/name/${fname}`, {
+          const response = await fetch(`https://backend-252y.onrender.com/find/name/${fname}`, {
             method:"GET"
           });
       
@@ -23,7 +23,7 @@ export default function Name(){
           }
         }
         async function handlePartialNameSearch(){
-          const response = await fetch(`http://localhost:5000/find/pname/${fname}`, {
+          const response = await fetch(`https://backend-252y.onrender.com/find/pname/${fname}`, {
             method:"GET"
           });
       
