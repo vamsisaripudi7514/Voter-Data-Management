@@ -1,0 +1,67 @@
+header {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    
+    h1 {
+      margin: 0;
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 1.4;
+      
+      @media (min-width: 768px){
+         max-width: 50%;
+      }
+      
+    }
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+    g {
+      transform-origin: 50% 50%;
+      
+      path, circle {
+        fill: #ccc;
+        transition: background-color 200ms ease-in;
+        
+        &:hover {
+          fill: #c00;
+        }
+      }
+      
+      circle {
+        stroke: white;
+      }
+      
+      &:hover {
+        cursor: pointer;
+      }
+     
+    }
+  }
+  
+  #tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    
+    h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+  }

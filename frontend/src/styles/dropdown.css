@@ -1,0 +1,39 @@
+/* Style the select element */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    color: #333;
+    width: 200px;
+    appearance: none;
+    outline: none;
+  }
+  
+  /* Style the dropdown arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  
+  select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #999;
+  }
+  
+  /* Style the dropdown options */
+  select option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Style the selected option */
+  select option:checked {
+    background-color: #e9e9e9;
+  }
+  
