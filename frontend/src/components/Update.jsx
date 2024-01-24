@@ -14,7 +14,7 @@ const Update = () => {
 
   //receving single user data
   const getSingleData = async () => {
-    const response = await fetch(`https://userdata-jb7v.onrender.com/${id}`);
+    const response = await fetch(`https://backend-252y.onrender.com/${id}`);
     const result = await response.json();
 
     if (response.ok) {
@@ -29,7 +29,7 @@ const Update = () => {
     e.preventDefault();
     const updatedUser = { fname, email, age };
     console.log(updatedUser);
-    const response = await fetch(`https://userdata-jb7v.onrender.com/edit/${id}`, {
+    const response = await fetch(`https://backend-252y.onrender.com/edit/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
