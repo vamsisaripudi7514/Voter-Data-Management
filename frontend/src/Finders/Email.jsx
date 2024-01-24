@@ -20,7 +20,7 @@ export default function Email(){
         setEmail(event.target.value);
     }
     async function handleClick() {
-        const response = await fetch(`http://localhost:5000/find/email/${email}`, {
+        const response = await fetch(`https://backend-252y.onrender.com/find/email/${email}`, {
           method:"GET"
         });
     
