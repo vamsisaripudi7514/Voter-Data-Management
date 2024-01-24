@@ -6,7 +6,7 @@ const Read = () => {
   const [error, setError] = useState();
 
   async function handleDelete(id) {
-    const response = await fetch(`https://userdata-jb7v.onrender.com/${id}`, {
+    const response = await fetch(`https://backend-252y.onrender.com/${id}`, {
       method:"DELETE"
     });
 
@@ -25,7 +25,7 @@ const Read = () => {
   }
 
   async function getData() {
-    const response = await fetch("https://userdata-jb7v.onrender.com/");
+    const response = await fetch("https://backend-252y.onrender.com/");
     const result = await response.json();
     console.log("result..", result);
     if (!response.ok) {
