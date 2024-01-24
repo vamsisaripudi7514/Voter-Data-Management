@@ -15,7 +15,7 @@ const Create = () => {
     var addUser = { fname, email, age };
     console.log(addUser);
 
-    const response = await fetch("https://userdata-jb7v.onrender.com/", {
+    const response = await fetch("https://backend-252y.onrender.com/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
